@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-    background-color: #B3CDE0; /* Soft pastel blue */
+    background-color: #B3CDE0; 
     padding: 1rem;
     position: fixed;
     top: 0;
@@ -17,16 +17,16 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: #005073; /* Calm dark blue */
+    color: #005073; 
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #023E58; /* Slightly darker blue on hover */
+    color: #023E58;
 }
 
 .navbar-nav .btn-dark {
-    background-color: #0277BD; /* Muted blue for button */
+    background-color: #0277BD;
     color: #ffffff;
     font-weight: 700;
 }
@@ -34,7 +34,7 @@ body {
 .site-logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #005073; /* Same color as nav items */
+    color: #005073; 
 }
 
 .blog-section {
@@ -44,15 +44,15 @@ body {
 }
 
 .blog-section h1 {
-    font-size: 2.2rem; /* Slightly smaller heading size */
+    font-size: 2.2rem;
     color: #005073;
     margin-bottom: 30px;
 }
 
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
-    gap: 20px; /* Space between the cards */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
 }
 
 .blog-card {
@@ -72,7 +72,7 @@ body {
 }
 
 .blog-card h2 {
-    font-size: 1.4rem; /* Reduced title size */
+    font-size: 1.4rem; 
     color: #005073;
     margin-bottom: 10px;
 }
@@ -100,14 +100,12 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive layout for smaller screens */
 @media (max-width: 768px) {
     .blog-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr;
     }
 }
 
-/* Button Styles */
 .buttons .btn-primary {
     background-color: #0277BD;
     border: none;
@@ -131,41 +129,34 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Adjust the section's padding */
     .features-section {
-        padding: 6rem 1rem; /* Reduce padding for smaller screens */
+        padding: 6rem 1rem; 
     }
 
-    /* Adjust heading font-size for mobile */
     .features-section h1 {
-        font-size: 1.5rem; /* Smaller heading size on mobile */
-        margin-bottom: 20px; /* Decrease bottom margin */
+        font-size: 1.5rem; 
+        margin-bottom: 20px; 
     }
 
-    /* Icon size adjustment for mobile */
     .features-section .fa-3x {
-        font-size: 2rem; /* Reduce icon size */
+        font-size: 2rem; 
     }
 
-    /* Column adjustments for better spacing */
     .features-section .col-md-6 {
-        width: 100%; /* Make each feature take up full width on small screens */
-        margin-bottom: 20px; /* Adjust bottom margin between features */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
-    /* Adjust paragraph font size and spacing */
     .features-section p {
-        font-size: 1rem; /* Slightly smaller text on mobile */
-        margin-bottom: 20px; /* Adjust bottom margin */
+        font-size: 1rem; 
+        margin-bottom: 20px; 
     }
 
-    /* Reduce button size */
     .buttons .btn-primary {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
 
-    /* Adjust footer padding */
     footer {
         padding: 15px;
         font-size: 0.9rem;
