@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f0f4f8;
+}
+
+.navbar {
+    background-color: #B3CDE0; /* Soft pastel blue */
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+    color: #005073; /* Calm dark blue */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #023E58; /* Slightly darker blue on hover */
+}
+
+.navbar-nav .btn-dark {
+    background-color: #0277BD; /* Muted blue for button */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.site-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #005073; /* Same color as nav items */
+}
+
+.blog-section {
+    padding: 7rem 2rem;
+    text-align: center;
+    background-color: #E6F0F8;
+}
+
+.blog-section h1 {
+    font-size: 2.2rem; /* Slightly smaller heading size */
+    color: #005073;
+    margin-bottom: 30px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
+    gap: 20px; /* Space between the cards */
+}
+
+.blog-card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.blog-card h2 {
+    font-size: 1.4rem; /* Reduced title size */
+    color: #005073;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.blog-card button {
+    background-color: #0277BD;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.blog-card button:hover {
+    background-color: #005073;
+}
+
+.blog-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+
+/* Button Styles */
+.buttons .btn-primary {
+    background-color: #0277BD;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn-primary:hover {
+    background-color: #005073;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #A3D1E1;
+    padding: 20px;
+    text-align: center;
+    color: #004d73;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    /* Adjust the section's padding */
+    .features-section {
+        padding: 6rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust heading font-size for mobile */
+    .features-section h1 {
+        font-size: 1.5rem; /* Smaller heading size on mobile */
+        margin-bottom: 20px; /* Decrease bottom margin */
+    }
+
+    /* Icon size adjustment for mobile */
+    .features-section .fa-3x {
+        font-size: 2rem; /* Reduce icon size */
+    }
+
+    /* Column adjustments for better spacing */
+    .features-section .col-md-6 {
+        width: 100%; /* Make each feature take up full width on small screens */
+        margin-bottom: 20px; /* Adjust bottom margin between features */
+    }
+
+    /* Adjust paragraph font size and spacing */
+    .features-section p {
+        font-size: 1rem; /* Slightly smaller text on mobile */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    /* Reduce button size */
+    .buttons .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    /* Adjust footer padding */
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,170 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; 
+}
+
+.navbar {
+    background-color: #B3CDE0; 
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+    color: #005073; 
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #023E58; 
+}
+
+.navbar-nav .btn-dark {
+    background-color: #0277BD; 
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.site-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #005073; 
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-color: #E6F0F8; 
+    color: #005073; 
+}
+
+.hero-section h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #023E58; 
+}
+
+.hero-section p {
+    font-size: 2vw;
+    color: #023E58; 
+    margin-top: 1rem;
+}
+
+.buttons .btn-primary {
+    background-color: #0277BD; 
+    border-color: #0277BD;
+}
+
+.buttons .btn-outline-secondary {
+    border-color: #005073;
+    color: #005073; 
+}
+
+.buttons .btn-primary:hover {
+    background-color: #01579B; 
+    border-color: #01579B;
+}
+
+.buttons .btn-outline-secondary:hover {
+    background-color: #005073; 
+    color: #ffffff;
+}
+
+
+.bg-light {
+    background-color: #f0f4f8 !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.bg-light .col-md-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bg-light .col-md-4 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.bg-light .col-md-4 p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.new-section-heading {
+    font-size: 3vw;
+    font-weight: 700;
+    color: #023E58;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .new-section-heading {
+        font-size: 7vw; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 8vw;
+    }
+
+    .hero-section p {
+        font-size: 3.5vw;
+    }
+
+    .bg-light .col-md-4 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #A3D1E1;
+    padding: 1rem;
+    text-align: center;
+    color: #004d73;
+}
+
+footer p {
+    font-size: 1.2rem; 
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh; 
+        padding-top: 7rem;
+    }
+
+    .hero-section h1 {
+        font-size: 7vw; 
+    }
+
+    .hero-section p {
+        font-size: 3.5vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-section h1 {
+        font-size: 3vw;
+    }
+    .hero-section p {
+        font-size: 1.5vw;
+    }
+}
